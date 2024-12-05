@@ -1,0 +1,235 @@
+html, body {
+    background-image: url('https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQRC29H19twWKcTZ9Zpg4biJbGNaHF2GGIYNcLt4eZ6fvwugUJbuKxTjjMFPCS-y5P3ZePL57rupDtSkyUIJhv3P8leMJGMzszuG2CHNd65NwWPu5LeKxQkRNfNMHmxAwt7tmQZFk1VIrBd1aXr2AR5DM.jpg?r=5b1'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Make the body a flex container */
+    flex-direction: column;  /* Align children (content and footer) vertically */
+    min-height: 80vh;  /* Make the body take at least the full height of the viewport */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d4d4d4;
+}
+
+/* Page Container */
+.page {
+    background: none; 
+    padding: 20px;
+    z-index: 1; 
+    position: relative;
+    flex-grow: 1; 
+    
+}
+
+
+/* Form Container */
+.form-container {
+    max-width: 100%;
+    background-color: rgba(6, 6, 6, 0.8) !important; 
+    color:#d4d4d4;
+    margin: auto;
+}
+
+.form-container h4 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Card Styling */
+.card {
+    background-color: rgba(6, 6, 6, 0.8) !important; 
+    color: #d4d4d4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Movie Details */
+#movies-list,
+#movie-details,
+#movie-details-title {
+    margin-top: 15px;
+}
+
+/* Welcome Section */
+#welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d4d4d4;
+    font-weight: bolder;
+}
+
+#welcome-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#welcome-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Buttons */
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: center;  /* Center the text */
+    width: 100%;  /* Ensure the footer takes full width */
+    position: relative;  /* Allow for proper footer positioning */
+    bottom: 0;  /* Push the footer to the bottom */
+}
+
+@media (max-width: 768px) {
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    
+    #home .row {
+        flex-direction: column;
+    }
+
+    #welcome-section h2 {
+        font-size: 1.5rem;
+    }
+
+    #welcome-section p {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    button {
+        font-size: 0.9rem;
+    }
+
+   
+    .card h5 {
+        font-size: 1rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Add Movie Form */
+#add-movie-form {
+    background-color: rgba(6, 6, 6, 0.8) !important; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    color: #d4d4d4;
+}
+
+
+.page {
+    background-color: transparent !important; 
+}
+
+
+/* Form Titles */
+#add-movie-form h4 {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    #add-movie-form {
+        padding: 15px;
+    }
+}
+
+
+.content {
+    flex-grow: 1; 
+    margin-bottom: 50px;
+}
+
+
+.large-font {
+    font-size: 4rem; 
+}
+
+.medium-font {
+    font-size: 1rem; 
+}
+
+@media (max-width: 768px) {
+    .large-font {
+        font-size: 1.5rem; 
+    }
+}
+
+.highlight {
+    background-color: rgba(3, 36, 54, 0.6); 
+    color: black; 
+    padding: 0 5px; 
+    border-radius: 6px; 
+}
+
+
+
